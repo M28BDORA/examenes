@@ -1,0 +1,109 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilos generales */
+header {
+    background-color: #61dafb;
+    color: #282c34;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra el contenedor de navegación horizontalmente */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Cambio a disposición vertical */
+    align-items: center; /* Centrar elementos horizontalmente */
+}
+
+nav ul li {
+    margin: 10px 0;
+    width: 100px; /* Ancho de cada elemento de la lista */
+    height: 50px; /* Altura de cada elemento de la lista */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #007bff 50%, #0056b3 50%);
+    background-size: 200% 100%;
+    transition: background-position 0.5s, color 0.5s;
+    display: flex; /* Hace que el enlace se ajuste al tamaño del cuadro */
+    justify-content: center; /* Centra el texto verticalmente */
+    align-items: center; /* Centra el texto horizontalmente */
+}
+
+nav ul li a:hover {
+    background-position: -100% 0;
+    color: #fff;
+}
+
+.styled-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(to right, #007bff 50%, #0056b3 50%);
+    background-size: 200% 100%;
+    transition: background-position 0.5s, color 0.5s;
+    color: #fff;
+}
+
+.styled-button:hover {
+    background-position: -100% 0;
+    color: #fff;
+}
+
+.dark-theme {
+    background-color: #1e1e1e;
+    color: #eee;
+}
+
+.dark-theme header {
+    background-color: #282c34;
+}
+
+.dark-theme .styled-button, .dark-theme nav ul li a {
+    background: linear-gradient(to right, #444 50%, #666 50%);
+    color: #fff;
+}
+
+.dark-theme .styled-button:hover, .dark-theme nav ul li a:hover {
+    background-position: -100% 0;
+    color: #eee;
+}

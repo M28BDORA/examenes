@@ -1,0 +1,135 @@
+/* aritmetica.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header button {
+    background-color: white;
+    color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header button:hover {
+    background-color: #ddd;
+}
+
+/* Estilos de los problemas */
+.problema {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Ocultar el desbordamiento */
+}
+
+.problema h2 {
+    margin-top: 0;
+}
+
+/* Contenedor para las opciones */
+.opciones-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Estilos de las opciones */
+.opcion {
+    margin: 5px;
+    transition: transform 0.3s ease; /* Añadir animación de transformación */
+}
+
+/* Estilos de las etiquetas de las opciones */
+.opcion input[type="radio"] {
+    display: none;
+}
+
+.opcion label {
+    display: block;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.opcion label:hover {
+    background-color: #ddd;
+}
+
+/* Estilos de las opciones seleccionadas */
+.opcion input[type="radio"]:checked + label {
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.1); /* Añadir una transformación de escala al seleccionar */
+}
+
+/* Estilos del botón de verificación */
+.problema button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.problema button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos del tema oscuro */
+.dark-theme {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.dark-theme header {
+    background-color: #222;
+}
+
+.dark-theme header button {
+    background-color: #444;
+    color: #f0f0f0;
+}
+
+.dark-theme .problema {
+    background-color: #444;
+}
+
+.dark-theme .opcion label {
+    background-color: #333;
+}
+
+.dark-theme .opcione input[type="radio"]:checked + label {
+    background-color: #45a049; 
+}

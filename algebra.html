@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas de Álgebra</title>
+    <link rel="stylesheet" href="algebra.css">
+</head>
+<body>
+    <header>
+        <h1>Problemas de Álgebra</h1>
+        <button id="theme-toggle">Cambiar Tema</button>
+        <button id="menu-return">Regresar al Menú</button>
+    </header>
+    
+    <main>
+        <section id="problemas-container"></section>
+    </main>
+
+    <script src="algebra.js"></script>
+
+    <script>
+        // Evento de clic para el botón de regresar al menú
+        document.getElementById('menu-return').addEventListener('click', function() {
+            window.location.href = "/INDEX.HTML"; // Cambia esto por la ruta correcta de tu página principal
+        });
+    </script>
+</body>
+</html>
